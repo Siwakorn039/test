@@ -1,0 +1,293 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css"></style>
+  </head>
+
+  <body>
+
+  <style type="text/css">
+      body {
+          background: url("https://4.bp.blogspot.com/-MvC-b7NP2og/VO3_OvdON0I/AAAAAAABduU/8fUplha1Sdo/s0/Sunset_at_Tiergarten_UHD.jpg") no-repeat center center fixed;
+          background-size: cover;
+      }
+  </style>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="banner">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+              <li>
+               <a href="index.html"><button type="button" class="btn btn-danger">Home</button></a>
+              </li>
+
+              <li>
+               <a href="profile.html"><button type="button" class="btn btn-danger">Profile</button></a>
+              </li>
+
+               <li>
+                 <a href="skill.html"><button type="button" class="btn btn-danger">Skill</button></a>
+               </li>
+               <li>
+                 <a href="work.html"><button type="button" class="btn btn-danger">Work</button></a>
+               </li>
+               <li>
+                 <a href="contact.html"><button type="button" class="btn btn-danger">Contact</button></a>
+               </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+	  <a name="Contact"></a>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                  <span class="network-name">
+                    <h2>Contact</h2><br>
+                      <div class="btn btn-default btn-lg">
+                    Talk to me
+                  <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Your Name" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control input-lg" placeholder="E-mail" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Facebook" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-lg" rows="5" placeholder="Message" required=""></textarea>
+                                        </div>
+                                        <button type="submit" class="btn wow bounceInRight animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bounceInRight;">Send</button>
+                                    </form>
+                        </div>
+                  </span>
+                </div>
+                <div class="col-lg-6">
+                  <span class="network-name">
+                    <h2>Detail Contact</h2>
+                  </span>
+                  <div class="jumbotron ">
+                      <i class="fa fa-user fa-fw"></i> <span class="network-name"><h3>Mr.Siwakorn Sripetch</h3></span>
+                      <i class="fa fa-envelope fa-fw"></i> <span class="network-name"><h4>Siwakorns2009@hotmail.com</h4> </span>
+                      <i class="fa fa-home fa-fw"></i> <span class="network-name">80 Village No.1,Road Vichitsongkram ,<br> &nbsp;&nbsp;&nbsp;Sub-district Kathu,Area Phuket,<br> &nbsp;&nbsp; Thailand 83120  </span><br>
+
+
+</div>
+
+
+
+
+                    <div class="col-lg-6">
+                      <hr class="intro-divider">
+                      <ul class="list-inline intro-social-buttons">
+                        <ul class="list-inline banner-social-buttons">
+
+                        </ul>
+                    </ul></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $("#menu-toggles").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+
+            that.off('click', onMapClickHandler);
+
+            that.find('iframe').css("pointer-events", "auto");
+
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+<script>
+function player() {
+  if (audioTrack.paused) {
+	setText(this, "Pause");
+	audioTrack.play();
+	} else {
+	setText(this,"Play");
+	audioTrack.pause();
+	}
+}
+
+function setText(el,text) {
+	el.innerHTML = text;
+}
+
+function finish() {
+		audioTrack.currentTime = 0;
+		setText(playButton,"Play");
+}
+
+function updatePlayhead() {
+	playhead.value = audioTrack.currentTime;
+	var s = parseInt(audioTrack.currentTime % 60);
+    var m = parseInt((audioTrack.currentTime / 60) % 60);
+    s = (s >= 10) ? s : "0" + s;
+    m = (m >= 10) ? m : "0" + m;
+    playbacktime.innerHTML = m + ':' + s ;
+
+}
+
+function volumizer() {
+	if (audioTrack.volume == 0) { setText(muteButton,"volume"); }
+	else { setText(muteButton,"volumehigh"); }
+}
+
+function muter() {
+	if (audioTrack.volume == 0) {
+		audioTrack.volume = restoreValue;
+		volumeSlider.value = restoreValue;
+	} else {
+		audioTrack.volume = 0;
+		restoreValue = volumeSlider.value;
+		volumeSlider.value = 0;
+	}
+}
+
+function setAttributes(el, attrs) {
+	for(var key in attrs){
+		el.setAttribute(key, attrs[key]);
+	}
+}
+
+var audioPlayer = document.getElementById("audioplayer"),
+fader = document.getElementById("fader"),
+playback = document.getElementById("playback"),
+audioTrack = document.getElementById("audiotrack"),
+playbackTime = document.getElementById("playbacktime"),
+playButton = document.createElement("button"),
+muteButton = document.createElement("button"),
+playhead = document.createElement("progress")
+volumeSlider = document.createElement("input");
+setText(playButton, "Play");
+setText(muteButton, "volumehigh");
+setAttributes(playButton, { "type": "button", "class": "ss-icon" });
+setAttributes(muteButton, { "type": "button", "class": "ss-icon" });
+muteButton.style.display = "block";
+muteButton.style.margin = "0 auto";
+setAttributes(volumeSlider, { "type": "range", "min": "0", "max": "1", "step": "any", "value": "1", "orient": "vertical", "id": "volumeSlider" });
+var duration = audioTrack.duration;
+setAttributes(playhead, { "min": "0", "max": "100", "value": "0", "id": "playhead" });
+fader.appendChild(volumeSlider);
+fader.appendChild(muteButton);
+playback.appendChild(playButton);
+playback.appendChild(playhead);
+audioTrack.removeAttribute("controls");
+playButton.addEventListener("click", player, false);
+muteButton.addEventListener("click", muter, false);
+volumeSlider.addEventListener("input", function(){ audioTrack.volume = volumeSlider.value; }, false);
+audioTrack.addEventListener('volumechange', volumizer, false);
+audioTrack.addEventListener('playing', function(){ playhead.max = audioTrack.duration; }, false);
+audioTrack.addEventListener('timeupdate', updatePlayhead, false);
+audioTrack.addEventListener('ended', finish, false);
+</script>
+    <!-- EndScriptSongAudioPlayer-->
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_waroot-portfolio&amp;utm_content=footer_img"><img src="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png" alt="www.000webhost.com"></a></div>
+     </div>
+        </div>
+
+
+<div class="container">
+            <ul class="pager">
+          <li><a href="work.html">Previous</a></li>
+        </ul>
+      </div>
+
+</body>
+
+</html>
